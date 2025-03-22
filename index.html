@@ -12,7 +12,7 @@
         }
         body {
             background: url('background.jpg') no-repeat center center fixed;
-     
+            background-size: cover;
             height: 100vh;
             display: flex;
             justify-content: center;
@@ -20,14 +20,16 @@
             color: white;
             font-family: Arial, sans-serif;
             text-align: center;
+            padding: 20px;
         }
         #countdown {
-            font-size: 6rem;
+            font-size: 5vw; /* Scales based on viewport width */
             font-weight: bold;
             background: rgba(0, 0, 0, 0.5);
             padding: 20px;
             border-radius: 10px;
-	    margin-left: 50%;	
+            max-width: 90%; /* Ensures it doesn't overflow */
+            word-wrap: break-word;
         }
     </style>
 </head>
